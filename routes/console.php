@@ -17,6 +17,10 @@ Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
 
+/**
+ * Enable execution of artisan command via app
+ * https://laravel.com/docs/5.4/artisan#programmatically-executing-commands
+ */
 Artisan::command('tmdb:fetcher', function() {
 
 });
