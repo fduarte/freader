@@ -8,7 +8,7 @@
     </div>
     @foreach ($moviesPopular->items() as $movie)
         <div class="col-4">
-            <div class="card-deck rounded">
+            <div class="card-deck rounded mb-2">
                 <div class="card">
                     <div class="card-header m-0">
                         <h6 class="card-title m-0">{{ $movie->title }}</h6>
@@ -24,6 +24,4 @@
             </div>
         </div>
     @endforeach
-
-
 @stop

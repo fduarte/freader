@@ -27,11 +27,7 @@
 
     <title>{{ env('APP_TITLE') }}</title>
 
-    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">--}}
-
-
-    <link href="{!! asset('css/fonts.css') !!}" media="all" rel="stylesheet" type="text/css" />
-    {{--<link href="{!! asset('css/app.css') !!}" media="all" rel="stylesheet" type="text/css" />--}}
+{{--    <link href="{!! asset('css/fonts.css') !!}" media="all" rel="stylesheet" type="text/css" />--}}
 
     <link rel="stylesheet" href="{{ mix('css/all.css') }}">
 
@@ -43,7 +39,7 @@
 
 <div class="container">
 
-    <div class="row mt-5">
+    <div class="row rounded pt-2 mt-2" style="background:#FFFFFF">
 
         @include('messages.errors')
 

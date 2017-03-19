@@ -7,14 +7,14 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Tech News <span class="sr-only">(current)</span></a>
+            <li class="nav-item {{ active(['tech-news', 'tech-news/*', 'tech-news.*', 'tech-news'])  }}">
+                <a class="nav-link" href="{{ url('tech-news') }}">Tech News <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
+            <li class="nav-item {{ active(['movies', 'movies/*', 'movies.*', 'movies']) }} ">
+                <a class="nav-link" href="{{ route('movies.index') }}">Movies</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+            <li class="nav-item {{ active(['pocket', 'pocket/*', 'pocket.*', 'pocket']) }}">
+                <a class="nav-link" href="{{ url('pocket') }}">Pocket</a>
             </li>
         </ul>
     </div>
